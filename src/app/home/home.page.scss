@@ -1,31 +1,3 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
-}
-
 
 // Slider Style START 
 .custon-nav{
@@ -34,24 +6,24 @@
   cursor: pointer;
 
   vertical-align: middle;
-  position: absolute;
+  // position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  // transform: translateY(-50%);
 }
 .prev-icon-custom{
   background: url(https://freakyjolly.com/demo/jquery/OwlCarousel2/nav-icon.png) no-repeat scroll 0px 0px;
 }
-.prev-icon-custom.disabled{
-  opacity: 0.4;
-  cursor: default;
-}
+// .prev-icon-custom.disabled{
+//   opacity: 0.4;
+//   cursor: default;
+// }
 .next-icon-custom{
   background: url(https://freakyjolly.com/demo/jquery/OwlCarousel2/nav-icon.png) no-repeat scroll -32px 0px;
 }
-.next-icon-custom.disabled{
-  opacity: 0.4;
-  cursor: default;
-}
+// .next-icon-custom.disabled{
+//   opacity: 0.4;
+//   cursor: default;
+// }
 .slider-nav{
   ion-icon{
       height: 100%;
@@ -66,11 +38,67 @@
 
 // Slider Style STOP
 .swiper-slide-active {
-  transform: scale(1.5);
+  // transform: scale(1.5);
   z-index: 5;
 }
 
 ion-slide:not(.swiper-slide-active) {
   /* Styles */
   opacity: 0.2;
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+  .arrow-prev, .arrow-next {
+    display: none;
+  }
+  // .swiper-slide-next, .swiper-slide-prev {
+    img {
+      // width: 60% !important;
+      margin-top: auto !important;
+      margin-bottom: auto !important;
+    }
+    .content-div, .img-div {
+      width: 30%;
+    }
+    // .img-div {
+    //   width: 50%;height: 500px;
+    // }
+  // }
+}
+
+.inner-div {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.arrow-next {
+  position: absolute;
+  right: 0;
+}
+
+.arrow-prev {
+  position: absolute;
+  left: 0;
+  z-index: 5;
+}
+
+.swiper-container {
+  // display: flex !important;
+  // overflow: unset;
+}
+
+.swiper-slide-active {
+  transition: all 1s ease-in-out;
+}
+
+// comment this for logic two
+.content-div, .img-div {
+  width: 50%;
+}
+
+.main-content-div {
+  ion-col {
+    padding: unset !important;
+  }
 }

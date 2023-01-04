@@ -21,11 +21,21 @@ export class HomePage {
   //Configuration for each Slider
   slideOptsTwo = {
     initialSlide: 1,
-    slidesPerView: 2,
+    slidesPerView: 1.2,
     loop: true,
     centeredSlides: true,
-    spaceBetween: 20
+    spaceBetween: 0,
+    virtual: true,
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    }
   };
+
+  
 
   constructor(
   ) {
@@ -36,19 +46,24 @@ export class HomePage {
       isEndSlide: false,
       slidesItems: [
         {
-          id: 324
+          id: 324,
+          img: 'https://thumbs.dreamstime.com/z/panorama-beautiful-green-forest-summer-nature-scenery-yellow-wild-flowers-panorama-beautiful-green-forest-landscape-131579660.jpg'
         },
         {
-          id: 321
+          id: 321,
+          img: 'https://thumbs.dreamstime.com/z/winter-landscape-fair-trees-under-snow-scenery-tourists-christmas-holidays-trampled-path-snowdrifts-winter-108808354.jpg'
         },
         {
-          id: 435
+          id: 435,
+          img: 'https://thumbs.dreamstime.com/z/autumn-forest-nature-vivid-morning-colorful-forest-sun-rays-branches-trees-scenery-nature-sunlight-105116502.jpg'
         },
         {
-          id: 524
+          id: 524,
+          img: 'https://thumbs.dreamstime.com/z/panoramic-russian-winter-landscape-forest-beautiful-frozen-river-sunset-scenery-winter-trees-water-blue-sky-92751564.jpg'
         },
         {
-          id: 235
+          id: 235,
+          img: 'https://thumbs.dreamstime.com/z/bergen-night-scenery-norway-cityscape-39557386.jpg'
         }
       ]
     };
